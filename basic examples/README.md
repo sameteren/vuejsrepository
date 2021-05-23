@@ -1,10 +1,5 @@
 
-  <h3 align="center">Vue.js Basic Notes For Me</h3>
-
-  <p align="center">
-    My notes about Vue.js
-  </p>
-
+  <h3 align="center">Vue.js Çalışma Notları</h3>
 
 ## Notes
 
