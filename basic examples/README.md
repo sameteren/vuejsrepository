@@ -8,7 +8,7 @@
 
 ## Notes
 
-
+```html
 * {{ title }} değişkenler double curly braces arasında yazılır // string interpolation -> {{}}
 * data : {
    title : "Merhaba Samet",
@@ -51,3 +51,4 @@ watch : {
 * Elementin pasif olaram DOM üzerinde kalmasını istiyorsak v-show kullanmalıyız.
 * Template elementi vue js ile gelir ve render edilmez
 * V-bind:key (:key) kullanarak v-for kullanırsak vue js elementin sıra numarasını değil elementin kendisini tutuyor bu yüzden eklenti yapıldığı zaman elementin yerini değiştiriyor. Ram için daha performanslı
+```
