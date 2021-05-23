@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style type="text/css">
+      div {
+        border: 1px solid #000;
+        padding: 5px 10px;
+
+      }
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+<ul>
+  <li v-for="personel in persons">
+    <ul>
+      <li v-for="(value, key, index) in personel"><strong> {{ key }} </strong> {{ value }} - {{ index }}</li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<script type="text/javascript">
+    new Vue({
+   el : "#app",
+   data: {
+   	 products: ["Monitör","Klavye", "Askı", "Masa"],
+     persons: [
+        { name : "Samet", email : "samet@test.com"},
+        { name : "Samet", email : "samet@test.com"},
+        { name : "Samet", email : "samet@test.com"},
+        { name : "Samet", email : "samet@test.com"},  
+     ]
+   }
+   
+});
+</script>
+
+</body>
+</html>
