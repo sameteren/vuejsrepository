@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+  <p> {{ name }} {{age}}</p>
+  <p> {{yasCarp()}}</p>
+  <p> {{rasgeleSayi()}}</p>
+  <img v-bind:src="resim">
+
+</div>
+
+<script type="text/javascript">
+    new Vue({
+   el : "#app",
+   data : {
+   name : "Samet",
+   age : 23,
+   resim : "https://klasiksanatlar.com/img/sayfalar/b/1_1598452306_resim.png",
+   },
+   methods : {
+    yasCarp : function(){ 
+      return this.age*5 
+    },
+    rasgeleSayi: function(){
+        return Math.random() * 1
+    },
+    changeName: function(){
+        this.name = event.target.value
+    }
+   }
+});
+</script>
+
+</body>
+</html>
